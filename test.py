@@ -1,10 +1,16 @@
-n=int(input())
-password=int(input())
-i=1
-if password % 5000 ==0:
-    print(password//5000)
-else:
-    while(password%5000!=0):
-        password=password-5000-i
-        i+=1
-    print(password//5000)        
+class A: 
+    
+    # Declaring public method
+    def fun(self):
+        print("Public method")
+    
+    # Declaring private method
+    def __fun(self):
+        print("Private method")
+          
+# Driver's code
+obj = A()
+  
+# Calling the private member 
+# through name mangling
+obj.__fun()

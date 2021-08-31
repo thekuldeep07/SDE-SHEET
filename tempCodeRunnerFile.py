@@ -1,1 +1,1 @@
-t.c= exponential
+  # print(self.head.key)
